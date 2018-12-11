@@ -5,6 +5,7 @@
     "jquery": "^3.3.1",
     "normalize.css": "^8.0.1",
     "phantomjs-prebuilt": "^2.1.16",
+    "waypoints": "^4.0.1",
     "webpack": "^4.27.1"
   },
   "devDependencies": {
