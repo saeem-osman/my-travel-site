@@ -7,6 +7,7 @@ class RevealOnScroll {
         this.hideInitially();
         this.createWaypoints();
         
+        
     }
     
     hideInitially() {
@@ -18,11 +19,12 @@ class RevealOnScroll {
         this.itemsToReveal.each(function(){
             var currentItem = this;
            new Waypoint({
+               
                element: currentItem,
                handler: function(){
                    $(currentItem).addClass("reveal-item--is-visible");
                },
-               offset: that.offsetPercentage;
+               offset: that.offsetPercentage
            })
         });
     }
