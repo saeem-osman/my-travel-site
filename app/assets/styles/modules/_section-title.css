@@ -11,6 +11,11 @@
 	&--blue {
 		color: #2f5572;
 	}
+    
+    &--less-margin {
+        margin-bottom: 1.3rem;
+        margin: 0px;
+    }
 	&-icon {
 		position: relative;
 		top: 8px;
