@@ -9,17 +9,17 @@ gulp.task('watch',function(){
     browserSync.init({
         notify: false,
         server: {
-            baseDir: "app"
+            baseDir: "docs"
         }
     });
-    watch('./app/index.html',function(){
+    watch('./docs/index.html',function(){
         browserSync.reload();  
     })
-    watch('./app/assets/styles/**/*.css',function(){
+    watch('./docs/assets/styles/**/*.css',function(){
         gulp.start('cssInject');
     });
     
-    watch('./app/assets/scripts/**/*.js',function(){
+    watch('./docs/assets/scripts/**/*.js',function(){
         gulp.start('scriptsRefresh');
         
     });
